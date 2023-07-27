@@ -56,6 +56,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(20),
         children: [
           const SizedBox(height: 60),
+          // Forground Mode
           ElevatedButton(
             child: const Text("Foreground Mode"),
             onPressed: () {
@@ -63,6 +64,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           const SizedBox(height: 20),
+          // Background Mode
           ElevatedButton(
             child: const Text("Background Mode"),
             onPressed: () {
@@ -70,6 +72,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           const SizedBox(height: 20),
+          // Start Button
           ElevatedButton(
             onPressed: () async {
               final service = FlutterBackgroundService();
@@ -87,6 +90,7 @@ class _HomePageState extends State<HomePage> {
             child: const Text('Start Service'),
           ),
           const SizedBox(height: 20),
+          // Stop Button
           ElevatedButton(
             child: const Text('Stop Service'),
             onPressed: () async {
